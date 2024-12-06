@@ -1,9 +1,5 @@
-# Flet app
+# Flet Counter
 
-A simple Flet app.
+一个基于Flet的简单计数器应用，在原版的基础上添加了持久化存储及重置功能。
 
-To run the app:
-
-```
-flet run [app_directory]
-```
+[下载最新版](https://github.com/lidongxun967/flet-counter/releases/latest)
