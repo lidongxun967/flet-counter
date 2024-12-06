@@ -1,0 +1,12 @@
+name: win
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: windows-latest
+    steps:
+        - name: Check out
+          uses: actions/checkout@v4
+        - name: pip install flet
+          run: pip install flet==0.25.1
+        - name: Run
+          run: flet build windows
