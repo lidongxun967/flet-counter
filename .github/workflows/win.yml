@@ -6,6 +6,8 @@ jobs:
     steps:
         - name: Check out
           uses: actions/checkout@v4
+        - name: Install Flutter SDK
+          uses: mobiledevops/flutter-sdk-action@v1.0.0
         - name: pip install flet
           run: pip install flet==0.25.1
         - name: Run
