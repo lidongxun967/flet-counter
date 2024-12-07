@@ -17,7 +17,7 @@ def read_json_file(file_path):
         with open(file_path, "r") as file:
             data = json.load(file)
 
-    return data
+    return DATA
 
 
 def update_json_file(file_path, update_value):
@@ -36,5 +36,4 @@ def reset_json_file(file_path):
     """
     # Check if the file exists=
         # If file does not exist, create it and write {"counter": 0}
-    with open(file_path, "w") as file:
-        json.dump(DATA, file)
+    os.remove(file_path)

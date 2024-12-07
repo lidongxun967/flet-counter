@@ -11,6 +11,7 @@ def main(page: ft.Page):
     def open_dlg(e):
         def reset_click(e):
             json_tool.reset_json_file(data_dir)
+            page.window.destroy()
         
         dlg = ft.AlertDialog(
             title=ft.Text("Debug Info"),
