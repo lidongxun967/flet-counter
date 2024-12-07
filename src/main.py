@@ -117,7 +117,9 @@ def main(page: ft.Page):
     counter = ft.Text(json_tool.read_json_file(data_dir)["counter"], size=100)
 
     # 页面构建
-    page.add(
+    page.add(ft.Text(),ft.Text(
+        "计数器", size=50
+    ),
         ft.ElevatedButton(
             "调试",
             on_click=open_dlg,
