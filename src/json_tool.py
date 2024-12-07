@@ -36,4 +36,5 @@ def reset_json_file(file_path):
     """
     # Check if the file exists=
         # If file does not exist, create it and write {"counter": 0}
-    os.remove(file_path)
+    with open(file_path, "w") as file:
+        json.dump(DATA, file)
