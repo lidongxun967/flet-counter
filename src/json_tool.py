@@ -12,12 +12,13 @@ def read_json_file(file_path):
         # If file does not exist, create it and write {"counter": 0}
         with open(file_path, "w") as file:
             json.dump(DATA, file)
+            return DATA
     else:
         # If file exists, read from it
         with open(file_path, "r") as file:
             data = json.load(file)
 
-    return DATA
+    return data
 
 
 def update_json_file(file_path, update_value):
